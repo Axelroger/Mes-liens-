@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mes Liens</title>
+  <link rel="icon" href="image\image.jpg" type="image/jpeg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: url('https://i.imgur.com/PZm60NE.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px 60px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.8);
+      position: relative;
+    }
+
+    .pseudo {
+      font-size: 3.5rem;
+      letter-spacing: 0.15em;
+      color: #ff006e;
+      text-shadow:
+        0 0 10px #ff006e,
+        0 0 20px #ff006e,
+        0 0 30px #ff006e,
+        0 0 40px #ff3399,
+        0 0 70px #ff3399;
+      animation: glowPulse 3s infinite alternate;
+    }
+    @keyframes glowPulse {
+      from {
+        text-shadow:
+          0 0 10px #ff006e,
+          0 0 20px #ff006e,
+          0 0 30px #ff006e,
+          0 0 40px #ff3399,
+          0 0 70px #ff3399;
+      }
+      to {
+        text-shadow:
+          0 0 20px #ff3399,
+          0 0 40px #ff3399,
+          0 0 50px #ff66cc,
+          0 0 80px #ff66cc,
+          0 0 100px #ff66cc;
+      }
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #ff006e;
+      box-shadow: 0 0 30px #ff006e;
+      object-fit: cover;
+      animation: bounce 3s ease-in-out infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .links {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 480px;
+    }
+
+    .link {
+      display: flex;
+      width: 64px;
+      height: 64px;
+      border-radius: 15px;
+      background: #222;
+      box-shadow: 0 0 10px #ff006e55;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .link img {
+      width: 36px;
+      height: 36px;
+      filter: drop-shadow(0 0 1px #ff006e);
+      transition: filter 0.3s ease;
+    }
+    .link:hover {
+      background: #ff006e;
+      box-shadow: 0 0 20px #ff006e;
+      transform: scale(1.15) rotate(10deg);
+    }
+    .link:hover img {
+      filter: drop-shadow(0 0 8px white);
+    }
+
+    .footer-email {
+      position: fixed;
+      bottom: 10px;
+      font-size: 3.0rem;
+      color: #ff006ecc;
+      text-shadow: 0 0 6px #ff006eaa;
+      font-family: 'Courier New', monospace;
+      width: 100%;
+      text-align: center;
+      user-select: text;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pseudo">FVL LEGEND</div>
+
+  <img src="https://i.imgur.com/gOoM3Bm.png" alt="Profil" class="profile-img" />
+
+  <div class="links">
+    <a href="https://discord.gg/u9wzVZnub2" target="_blank" rel="noopener noreferrer" class="link" title="Discord">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" />
+    </a>
+    <a href="https://youtube.com/@gg_axel?si=YJxE8HfRs8YcGDvV" target="_blank" rel="noopener noreferrer" class="link" title="YouTube">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+    </a>
+    <a href="https://www.instagram.com/gg_axel_ytb6?igsh=aDB4YTVwZGZjYmMz&utm_source=qr" target="_blank" rel="noopener noreferrer" class="link" title="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
+    </a>
+    <a href="https://www.twitch.tv/gg_axel_ytb" target="_blank" rel="noopener noreferrer" class="link" title="Twitch">
+      <img src="image\twitch.png" alt="Twitch" />
+    </a>
+    <a href="https://snapchat.com/t/SVLj4qUX" target="_blank" rel="noopener noreferrer" class="link" title="Snapchat">
+      <img src="image\application.png" alt="Snapchat" />
+    </a>
+    <a href="https://www.tiktok.com/@gg_axel_ytb?_t=ZN-90ci5NPQ77K&_r=1" target="_blank" rel="noopener noreferrer" class="link" title="TikTok">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" />
+    </a>
+  </div>
+
+  <div class="footer-email">
+    En cas de problème avec un service, contacte-moi à : fvllegend@gmail.com
+  </div>
+
+</body>
+</html>
